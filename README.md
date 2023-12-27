@@ -18,9 +18,10 @@ mvn jetty:run
 
 LibrarySystem-master\src\main\resources\db.properties
 
-#mysql jdbc
+
 ![image](https://github.com/Aqua-Chen/LibrarySystem/assets/65001321/ca4110ab-5c80-4063-a7f9-afeb1c5317cb)
 
+#mysql jdbc
 jdbc.driver=com.mysql.cj.jdbc.Driver
 jdbc.url=jdbc:mysql://localhost:3306/library?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
 jdbc.username=root（你的数据库用户名）
