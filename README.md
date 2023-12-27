@@ -28,6 +28,7 @@ jdbc.username=root（你的数据库用户名）
 jdbc.password=12345678(你的数据库密码)
 
 LibrarySystem-master\pom.xml
+
 ![image](https://github.com/Aqua-Chen/LibrarySystem/assets/65001321/004b2af0-1158-4fc6-b1b9-0e565d4e464c)
 
 <mysql.version>8.0.16</mysql.version>（不一定非得是这个版本）
