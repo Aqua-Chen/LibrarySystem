@@ -13,6 +13,25 @@ mvn jetty:run
 ```
 3. 使用浏览器访问http://localhost:8080即可进入系统。
 
+### 注意
+1.由于原仓库构建于3年前，数据库版本可能与你当前计算机的不兼容，你可能需要更改下列配置文件才能使项目正常运行
+LibrarySystem-master\src\main\resources\db.properties
+
+#mysql jdbc
+![image](https://github.com/Aqua-Chen/LibrarySystem/assets/65001321/ca4110ab-5c80-4063-a7f9-afeb1c5317cb)
+
+jdbc.driver=com.mysql.cj.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/library?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+jdbc.username=root（你的数据库用户名）
+jdbc.password=12345678(你的数据库密码)
+
+LibrarySystem-master\pom.xml
+![image](https://github.com/Aqua-Chen/LibrarySystem/assets/65001321/004b2af0-1158-4fc6-b1b9-0e565d4e464c)
+
+<mysql.version>8.0.16</mysql.version>（不一定非得是这个版本）
+
+
+
 ### 概念设计
 用户分为两类：读者、图书馆管理员。图书馆管理员可以修改读者信息，修改书目信息，查看所有借还日志等；读者仅可以修改个人信息、借阅或归还书籍和查看自己的借还日志。
 <img src="./preview/1.png" style="width: 50%"><img src="./preview/2.png" style="width: 50%;float: right">
