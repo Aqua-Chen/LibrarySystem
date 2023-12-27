@@ -15,6 +15,7 @@ mvn jetty:run
 
 ### 注意
 1.由于原仓库构建于3年前，数据库版本可能与你当前计算机的不兼容，你可能需要更改下列配置文件才能使项目正常运行
+
 LibrarySystem-master\src\main\resources\db.properties
 
 #mysql jdbc
